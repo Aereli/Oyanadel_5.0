@@ -21,10 +21,10 @@ const Header = ({ siteTitle }) => {
         <div className={["navbarLinks", toggle && "active"].join(" ")}>
           <ul>
             <li>
-              <a href="#">About</a>
+              <Link to="#">About</Link>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <Link to="#">Contact</Link>
             </li>
           </ul>
         </div>
