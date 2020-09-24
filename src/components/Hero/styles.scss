@@ -22,7 +22,7 @@
   }
 }
 
-.heroBannerWithBars {
+.heroBannerContainer {
   position: absolute;
   bottom: 15%;
   width: 100%;
@@ -31,8 +31,11 @@
 .heroBanner {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: flex-end;
   background-color: #457b9d;
+  div {
+    margin-right: 20%;
+  }
   h1 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -45,7 +48,11 @@
 }
 
 .heroCycle {
-  width: 100px;
+  position: absolute;
+  left: 0;
+  width: 150px;
+  top: -14px;
+  z-index: 2;
 }
 
 @media #{$display-breakpoint} {
@@ -53,6 +60,11 @@
     margin: 25% 0 0 5%;
     h1 {
       font-size: 3.5rem;
+    }
+  }
+  .heroBanner {
+    div {
+      margin-right: 20px;
     }
   }
 }
