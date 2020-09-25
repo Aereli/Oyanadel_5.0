@@ -1,0 +1,61 @@
+@import "../../assets/globals.scss";
+
+.contactContainer {
+  text-align: center;
+  background-color: #1d3557;
+  color: white;
+  h1 {
+    margin: 0;
+    padding-top: 15vh;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    font-weight: 300;
+  }
+  h2 {
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+.contactAnchors {
+  img {
+    width: 55px;
+    padding: 1rem;
+    filter: drop-shadow(0px 0px 5px #fff);
+  }
+  padding-bottom: 10vh;
+}
+
+@media #{$display-breakpoint} {
+  .contactContainer {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .contactAnchors {
+    padding-bottom: 15vh;
+  }
+}
+
+.contactAnchors img:hover {
+  // -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+  animation: pulsate-bck 0.6s ease-in-out infinite both;
+}
+
+@keyframes pulsate-bck {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
