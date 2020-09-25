@@ -8,6 +8,7 @@
     color: #495867;
     font-size: 5rem;
     font-weight: 500;
+    letter-spacing: 5px;
   }
   h2 {
     color: #0081a7;
@@ -29,6 +30,7 @@
 }
 
 .heroBanner {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -37,19 +39,31 @@
     margin-right: 20%;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     color: white;
+    margin: 1rem;
   }
   h1:nth-child(1) {
-    transform: translateX(-45px);
+    transform: translateX(-135px);
+  }
+}
+
+.heroSun {
+  float: right;
+  height: 200px;
+  width: 400px;
+  border-radius: 300px 300px 0 0;
+  background-color: #e63946;
+  div {
+    margin-top: 75px;
   }
 }
 
 .heroCycle {
   position: absolute;
-  left: 0;
+  left: 5%;
   width: 150px;
   top: -14px;
   z-index: 2;
@@ -57,7 +71,6 @@
 
 @media #{$display-breakpoint} {
   .heroTitlesContainer {
-    margin: 25% 0 0 5%;
     h1 {
       font-size: 3.5rem;
     }
@@ -65,6 +78,21 @@
   .heroBanner {
     div {
       margin-right: 20px;
+    }
+    h1 {
+      font-size: 1.5rem;
+      letter-spacing: 5px;
+    }
+    h1:nth-child(1) {
+      transform: translateX(-75px);
+    }
+  }
+
+  .heroSun {
+    height: 100px;
+    width: 200px;
+    div {
+      margin-top: 50px;
     }
   }
 }

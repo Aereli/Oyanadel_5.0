@@ -26,6 +26,9 @@ const Hero = () => {
         </div>
       </div>
       <div className="heroBannerContainer">
+        <div className="heroSun">
+          <Bars color="#fff" degree="180deg" />
+        </div>
         <div className="heroBanner">
           <img className="heroCycle" src={bicycle} alt="bicycle"></img>
           <div>
@@ -33,7 +36,7 @@ const Hero = () => {
             <h1>WEB DEVELOPER</h1>
           </div>
         </div>
-        <Bars />
+        <Bars color="#495867" />
       </div>
     </div>
   )
