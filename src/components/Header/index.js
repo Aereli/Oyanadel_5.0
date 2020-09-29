@@ -8,20 +8,18 @@ const Header = ({ siteTitle }) => {
   return (
     <header>
       <nav className="navbar">
-        <div className="brand-title">{siteTitle}</div>
-        <Link
-          to="/"
-          className="toggle-button"
-          onClick={() => setToggle(!toggle)}
-        >
+        <div className="logo">
+          <Link to="/">{siteTitle}</Link>
+        </div>
+        <div className="toggle-button" onClick={() => setToggle(!toggle)}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </Link>
+        </div>
         <div className={["navbarLinks", toggle && "active"].join(" ")}>
           <ul>
             <li>
-              <Link to="#">About</Link>
+              <Link to="/projects">Work</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>

@@ -1,0 +1,68 @@
+[
+  {
+    "title": "ShipSip",
+    "sub": "ReactJs, Shippo API, Ruby on Rails, MySql, Devise gem, CSS",
+    "slug": "Package Shipping Website",
+    "url": "https://wyn-shipship.herokuapp.com/",
+    "image": "./images/shipship.png",
+    "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
+    "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise Gem, Formspree",
+    "github": "https://github.com/Aereli/ShipShip",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939491/OyanadelPage/shipship.mov"
+  },
+  {
+    "title": "Barhop",
+    "sub": "ReactJS, HTML, CSS, Yelp API",
+    "slug": "Bar Listing Website",
+    "url": "http://barhop-wyncode.herokuapp.com/",
+    "image": "./images/barhop.png",
+    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
+    "tech": "ReactJs, Yelp API, HTML, CSS",
+    "github": "https://github.com/Aereli/Bar_hop_final",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592856169/OyanadelPage/barhop.mov"
+  },
+  {
+    "title": "Covid-19",
+    "sub": "NextJs, CSS, API",
+    "slug": "Covid Virus Information",
+    "url": "https://wonderful-agnesi-d186b6.netlify.app/",
+    "image": "./images/covid-19.png",
+    "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
+    "tech": "NextJs, MathDroid API",
+    "github": "https://github.com/Aereli/covid-19-facts",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939613/OyanadelPage/covid19.mov"
+  },
+  {
+    "title": "aereli Art",
+    "sub": "Gatsby, React, Graphql, ",
+    "slug": "Art Page",
+    "url": "http://aereli.com",
+    "image": "./images/aereliArt.png",
+    "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load.",
+    "tech": "React, Gatsby, Graphql",
+    "github": "https://github.com/Aereli/AereliArt",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939829/OyanadelPage/Aereli.mov"
+  },
+  {
+    "title": "splttr",
+    "sub": "Vanilla JS, HTML, CSS",
+    "slug": "Tip Calculator",
+    "url": "https://aereli.github.io/Tip-Calculator/",
+    "image": "./images/splttr.png",
+    "description": "Simple tip calculator for partys of any size using Pure Vanilla Javascript",
+    "tech": "Vanilla JS, HTML, CSS",
+    "github": "https://github.com/Aereli/Tip-Calculator",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1592939522/OyanadelPage/splttr.mov"
+  },
+  {
+    "title": "Wyn-Generator",
+    "sub": "React, Javascript, HTML, CSS",
+    "slug": "Student Generator",
+    "url": "https://wyn-generator.netlify.app/",
+    "image": "./images/generator.png",
+    "description": "Selects a random student from the wyncode cohort36 Api.",
+    "tech": "React, Javascript, HTML, CSS",
+    "github": "https://github.com/Aereli/Tip-Calculator",
+    "video": "https://res.cloudinary.com/aereli/video/upload/v1593023027/OyanadelPage/wyn-generator.mov"
+  }
+]

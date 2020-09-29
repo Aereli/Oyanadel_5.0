@@ -3,7 +3,6 @@ import React from "react"
 import "./styles.scss"
 import Layout from "../../components/Layout"
 import SEO from "../../components/seo"
-import Bars from "../../components/Bars"
 import github from "../../images/Vector.svg"
 import file from "../../images/Vector2.svg"
 import linkedin from "../../images/Vector3.svg"
@@ -14,27 +13,33 @@ const Contact = () => {
   return (
     <Layout>
       <SEO title="Eric | Contact" />
-      <Bars color="#1D3557" degree="180deg" />
       <div className="contactContainer">
         <h1>Eric Oyanadel</h1>
         <h2>AereliOyanadel@gmail.com</h2>
 
         <div className="contactAnchors">
-          <a href="https://github.com/Aereli">
+          <a href="https://github.com/Aereli" target="_blank" rel="noreferrer">
             <img src={github} alt="github" />
           </a>
           <a href={Resume} download>
             <img src={file} alt="file" />
           </a>
-          <a href="https://www.linkedin.com/in/eric-oyanadel/">
+          <a
+            href="https://www.linkedin.com/in/eric-oyanadel/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={linkedin} alt="linkedin" />
           </a>
-          <a href="https://stackoverflow.com/users/12149334/aereli">
+          <a
+            href="https://stackoverflow.com/users/12149334/aereli"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={stackoverflow} alt="stackoverflow" />
           </a>
         </div>
       </div>
-      <Bars color="#1D3557" />
     </Layout>
   )
 }
