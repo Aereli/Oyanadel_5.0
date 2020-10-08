@@ -3,6 +3,10 @@ module.exports = {
     title: `Eric`,
     description: `Web Developer Website`,
     author: `@Aereli`,
+    github: `https://github.com/Aereli`,
+    email: `aerelioyanadel@gmail.com`,
+    stackoverflow: `https://stackoverflow.com/users/12149334/aereli`,
+    linkedin: `https://www.linkedin.com/in/eric-oyanadel/`,
   },
 
   plugins: [
