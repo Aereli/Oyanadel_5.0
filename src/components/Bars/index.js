@@ -4,12 +4,12 @@ import "./styles.scss"
 
 const Bars = ({ color, degree }) => (
   <div className="heroBars" style={{ transform: `rotate(${degree})` }}>
-    <div className="heroBars1" style={{ backgroundColor: `${color}` }} />
-    <div className="heroBars2" style={{ backgroundColor: `${color}` }} />
-    <div className="heroBars3" style={{ backgroundColor: `${color}` }} />
-    <div className="heroBars4" style={{ backgroundColor: `${color}` }} />
-    <div className="heroBars5" style={{ backgroundColor: `${color}` }} />
-    <div className="heroBars6" style={{ backgroundColor: `${color}` }} />
+    <div className="heroBars1" style={{ background: `${color}` }} />
+    <div className="heroBars2" style={{ background: `${color}` }} />
+    <div className="heroBars3" style={{ background: `${color}` }} />
+    <div className="heroBars4" style={{ background: `${color}` }} />
+    <div className="heroBars5" style={{ background: `${color}` }} />
+    <div className="heroBars6" style={{ background: `${color}` }} />
   </div>
 )
 

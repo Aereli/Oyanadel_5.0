@@ -37,7 +37,7 @@ const Hero = () => {
             <h1>WEB DEVELOPER</h1>
           </div>
         </div>
-        <Bars color="#457b9d" />
+        <Bars color="linear-gradient(180deg, rgba(44,87,113,1) 10%, rgba(69,123,157,1) 79%, rgba(0,212,255,0) 100%)" />
       </div>
     </>
   )
