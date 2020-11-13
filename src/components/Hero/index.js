@@ -5,11 +5,10 @@ import Bars from "../Bars"
 import github from "../../images/Vector.svg"
 import file from "../../images/Vector2.svg"
 import linkedin from "../../images/Vector3.svg"
-import bicycle from "../../images/bicycle.svg"
 
 const Hero = () => {
   return (
-    <div>
+    <>
       <div className="heroTitlesContainer">
         <h1>Eric Oyanadel</h1>
         <h2>based in Miami, Florida</h2>
@@ -25,20 +24,22 @@ const Hero = () => {
           </a>
         </div>
       </div>
+
       <div className="heroBannerContainer">
-        <div className="heroSun">
-          <Bars color="#fff" degree="180deg" />
+        <div className="heroSunContainer">
+          <div className="heroSun">
+            <Bars degree="180deg" />
+          </div>
         </div>
         <div className="heroBanner">
-          <img className="heroCycle" src={bicycle} alt="bicycle"></img>
           <div>
             <h1>FULL-STACK</h1>
             <h1>WEB DEVELOPER</h1>
           </div>
         </div>
-        <Bars color="#495867" />
+        <Bars color="#457b9d" />
       </div>
-    </div>
+    </>
   )
 }
 

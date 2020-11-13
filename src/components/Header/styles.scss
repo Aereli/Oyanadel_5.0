@@ -1,9 +1,13 @@
+@import "../../assets/globals.scss";
+@import "../../assets/colors";
+
 .navbar {
+  @extend %site-container;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: #457b9d;
+  background-color: $primary-color;
   height: 6vh;
 }
 
@@ -11,15 +15,13 @@
   padding: 0.8rem;
   a {
     text-decoration: none;
-    // color: #495867;
-    color: white;
+    color: $white;
     font-size: 1.5rem;
   }
 }
 
 .navbarLinks {
   display: block;
-  background-color: #457b9d;
 
   ul {
     display: flex;
@@ -35,7 +37,7 @@
     display: block;
     text-decoration: none;
     padding: 0 75px;
-    color: white;
+    color: $white;
   }
 }
 
@@ -53,7 +55,7 @@
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: $white;
   border-radius: 10px;
 }
 

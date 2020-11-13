@@ -1,22 +1,28 @@
 @import "../../assets/globals.scss";
+@import "../../assets/colors";
 
 .heroTitlesContainer {
-  margin: 5% 0 0 5%;
+  @extend %site-container;
+  margin-top: 15%;
+
   h1 {
     margin-bottom: 0.5rem;
     line-height: 1;
-    color: #495867;
+    color: $white;
     font-size: 5rem;
     font-weight: 500;
     letter-spacing: 5px;
   }
+
   h2 {
-    color: #0081a7;
+    color: $white;
     font-weight: 200;
     text-indent: 20px;
   }
+
   .heroAnchors {
     text-indent: 20px;
+
     a {
       padding-right: 15px;
     }
@@ -24,8 +30,6 @@
 }
 
 .heroBannerContainer {
-  position: absolute;
-  bottom: 15%;
   width: 100%;
 }
 
@@ -34,39 +38,35 @@
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  background-color: #457b9d;
+  background-color: $tertiary-color;
+  
   div {
-    margin-right: 20%;
+    @extend %site-container;
   }
+
   h1 {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 15px;
-    color: white;
-    margin: 1rem;
+    color: $white;
   }
+
   h1:nth-child(1) {
     transform: translateX(-135px);
   }
 }
 
-.heroSun {
-  float: right;
-  height: 200px;
-  width: 400px;
-  border-radius: 300px 300px 0 0;
-  background-color: #e63946;
-  margin-top: 75px;
-  div {
+.heroSunContainer {
+  @extend %site-container;
+  
+  .heroSun {
+    float: right;
+    height: 200px;
+    width: 400px;
+    margin-top: 75px;
+    border-radius: 300px 300px 0 0;
+    background: $hero-sun;
   }
-}
-
-.heroCycle {
-  position: absolute;
-  left: 5%;
-  width: 150px;
-  top: -14px;
-  z-index: 2;
 }
 
 @media #{$display-breakpoint} {
@@ -75,24 +75,29 @@
       font-size: 3.5rem;
     }
   }
+
   .heroBanner {
     div {
       margin-right: 20px;
     }
+
     h1 {
       font-size: 1.5rem;
       letter-spacing: 5px;
     }
+
     h1:nth-child(1) {
       transform: translateX(-75px);
     }
   }
-
-  .heroSun {
-    height: 100px;
-    width: 200px;
-    div {
-      margin-top: 50px;
+  .heroSunContainer {
+    .heroSun {
+      height: 100px;
+      width: 200px;
+      
+      div {
+        margin-top: 50px;
+      }
     }
   }
 }

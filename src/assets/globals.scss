@@ -1,8 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap");
+@import "../assets/colors";
 
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
+  background: $primary-color;
 }
 
 $display-breakpoint: "only screen and (max-width : 770px)";
+
+%site-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+%full-width-container-override {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+}
+
+// Link - pseudo classes
+// If $visited, $hover or $active is not defined, it will fall back
+// to the $link default value. This way not all colors have to be specified.
+// Userful for when the a link should be the same color for all pseudo classes
+@mixin link ($link, $visited: $link, $hover: $link, $active: $link) {
+  & {
+    color: $link;
+    text-decoration: none;
+
+    &:visited {
+      color: $visited;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+
+    &:active,
+    &:focus {
+      color: $active;
+    }
+  }
+}
