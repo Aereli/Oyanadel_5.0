@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
 import Modal from "@material-ui/core/Modal"
+import { DialogTitle } from "@material-ui/core"
+import "./styles.scss"
 
 const SingleProject = ({
   image,
@@ -21,13 +23,18 @@ const SingleProject = ({
   const handleClose = () => {
     setOpen(false)
   }
+
   return (
-    <div>
-      <Img key={id} fixed={image}></Img>
-      <p id="title">{title}</p>
-      <p id="main-desc">{sub}</p>
-      <p>{description}</p>
-      <div id="links">
+    <div className="singleContainer">
+      <div className="singleImage">
+        <Img  key={id} fluid={image} alt={title}/>
+      </div>
+      <div className="singleContent">
+        <p id="title">{title}</p>
+        <p id="main-desc">{sub}</p>
+        <p>{description}</p>
+      </div>
+      {/* <div id="links">
         <a href={github} target="_blank" rel="noopener noreferrer">
           View Github
         </a>
@@ -63,8 +70,8 @@ const SingleProject = ({
           >
             <source src={video} />
           </video>
-        </Modal>
-      </div>
+        </Modal> */}
+      {/* </div> */}
     </div>
   )
 }

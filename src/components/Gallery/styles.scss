@@ -1,1 +1,52 @@
 @import "../../assets/globals.scss";
+@import "../../assets/colors";
+
+.galleryContainer {
+  @extend %site-container;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleContainer {
+  position: relative;
+  min-width: 49%;
+  max-height: 260px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid $secondary-color;
+
+  &:hover{
+
+    .singleImage {
+      transform: scale(1.2);
+      transition: (.5s ease-in-out);
+      // opacity: .7;
+      display: none;
+              
+      .singleContent {
+        display: block;
+        z-index: 5;
+      }
+    }
+  }
+
+  &:hover + .singleContent {
+    display: inline-block;
+
+    .singleImage {
+       display: none;
+    }
+  } 
+
+}
+
+.singleContent {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.singleContentActive {
+  display: block;
+}

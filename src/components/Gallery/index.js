@@ -17,12 +17,12 @@ const Gallery = () => {
             video
             image {
               childImageSharp {
-                # fluid {
-                #   ...GatsbyImageSharpFluid
-                # }
-                fixed(width: 300, height: 125) {
-                  ...GatsbyImageSharpFixed
+                fluid {
+                  ...GatsbyImageSharpFluid
                 }
+                # fixed(width: 300, height: 125) {
+                #   ...GatsbyImageSharpFixed
+                # }
               }
             }
           }
@@ -33,20 +33,20 @@ const Gallery = () => {
   const projects = pageQuery.allProjectsJson.edges
 
   return (
-    <>
+    <div className="galleryContainer">
       {projects.map(({ node }) => (
         <Single
           key={node.id}
           title={node.title}
           sub={node.sub}
           description={node.description}
-          image={node.image.childImageSharp.fixed}
+          image={node.image.childImageSharp.fluid}
           github={node.github}
           url={node.url}
           video={node.video}
         />
       ))}
-    </>
+    </div>
   )
 }
 
