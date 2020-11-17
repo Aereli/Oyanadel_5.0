@@ -26,7 +26,7 @@
     "sub": "NextJs, CSS, API",
     "slug": "Covid Virus Information",
     "url": "https://wonderful-agnesi-d186b6.netlify.app/",
-    "image": "./images/covid-19.png",
+    "image": "./images/covid19.png",
     "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
     "tech": "NextJs, MathDroid API",
     "github": "https://github.com/Aereli/covid-19-facts",

@@ -1,50 +1,62 @@
 import React from "react"
-// import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 import "./styles.scss"
-import Bars from "../Bars"
-import github from "../../images/Vector.svg"
-import file from "../../images/Vector2.svg"
-import linkedin from "../../images/Vector3.svg"
+import githubImg from "../../images/Vector.svg"
+import fileImg from "../../images/Vector2.svg"
+import linkedinImg from "../../images/Vector3.svg"
+import Resume from "../../images/EricOyanadel_Pro_2020.pdf"
 
-const Hero = () => {
+
+const Hero = ({ github, linkedin}) => {
+
   return (
     <>
       <div className="heroTitlesContainer">
         <h1>Eric Oyanadel</h1>
-        <h2>based in Miami, Florida</h2>
+        <h2>based in Miami, Florida</h2> 
         <div className="heroAnchors">
-          <a href="#">
-            <img src={github} alt="github" />
+        <a href="https://github.com/Aereli" target="_blank" rel="noreferrer">
+            <img src={githubImg} alt="github" />
           </a>
-          <a href="#">
-            <img src={file} alt="file" />
+          <a href={Resume} download>
+            <img src={fileImg} alt="file" />
           </a>
-          <a href="#">
-            <img src={linkedin} alt="linkedin" />
+          <a
+            href="https://www.linkedin.com/in/eric-oyanadel/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={linkedinImg} alt="linkedin" />
           </a>
         </div>
       </div>
 
       <div className="heroBannerContainer">
         <div className="heroSunContainer">
-          <div className="heroSun">
-            <Bars degree="180deg" />
-          </div>
+          <div className="heroSun" />
         </div>
+
         <div className="heroBanner">
           <div>
             <h1>FULL-STACK</h1>
             <h1>WEB DEVELOPER</h1>
           </div>
         </div>
-        <Bars color="linear-gradient(180deg, rgba(44,87,113,1) 10%, rgba(69,123,157,1) 79%, rgba(0,212,255,0) 100%)" />
       </div>
     </>
   )
 }
 
-Hero.propTypes = {}
+Hero.propTypes = {
+  title: PropTypes.string,
+  resume: PropTypes.string,
+  linkedin: PropTypes.string,
+}
 
-Hero.defaultProps = {}
+Hero.defaultProps = {
+  title: null,
+  resume: null,
+  linkedin: null,
+}
 
 export default Hero

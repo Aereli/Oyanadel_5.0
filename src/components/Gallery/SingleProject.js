@@ -1,77 +1,52 @@
-import React, { useState } from "react"
+import React, { useRef, useEffect } from "react"
 import Img from "gatsby-image"
-import Modal from "@material-ui/core/Modal"
-import { DialogTitle } from "@material-ui/core"
+import { Link } from "gatsby"
 import "./styles.scss"
+import VanillaTilt from 'vanilla-tilt'
+import VideoModal from "./VideoModal"
 
-const SingleProject = ({
+
+const SingleProject = ({ 
   image,
   title,
   url,
-  description,
   sub,
   id,
   github,
   video,
 }) => {
-  const [open, setOpen] = useState(false)
 
-  const handleOpen = () => {
-    setOpen(true)
-  }
+  const tiltRef = useRef(null)
 
-  const handleClose = () => {
-    setOpen(false)
-  }
+// https://www.npmjs.com/package/vanilla-tilt
+  useEffect(() => {
+    VanillaTilt.init(tiltRef.current, {
+      max: 10,
+      speed: 400,
+      glare: true,
+      'max-glare': 0.5,
+    })
+    return () => tiltRef.current.vanillaTilt.destroy()
+  }, [])
 
   return (
-    <div className="singleContainer">
+    <div ref={tiltRef} className="singleContainer">
       <div className="singleImage">
         <Img  key={id} fluid={image} alt={title}/>
       </div>
       <div className="singleContent">
-        <p id="title">{title}</p>
+        <h1 id="title">{title}</h1>
         <p id="main-desc">{sub}</p>
-        <p>{description}</p>
+
+        <div className="singleLinks">
+          <Link to={github} target="_blank" rel="noopener noreferrer">
+            View Github
+          </Link>
+          <VideoModal video={video} />
+          <a>View more</a>
+
+        </div>
       </div>
-      {/* <div id="links">
-        <a href={github} target="_blank" rel="noopener noreferrer">
-          View Github
-        </a>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          View The Site
-        </a>
-        <button className="button" onClick={handleOpen}>
-          Preview
-        </button>
-        <Modal
-          aria-labelledby="transition-modal-title"
-          aria-describedby="transition-modal-description"
-          open={open}
-          onClose={handleClose}
-          closeAfterTransition
-          BackdropProps={{
-            timeout: 500,
-          }}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            outline: 0,
-          }}
-        >
-          <video
-            autoPlay
-            track=""
-            style={{
-              width: "80%",
-              objectFit: "contain",
-            }}
-          >
-            <source src={video} />
-          </video>
-        </Modal> */}
-      {/* </div> */}
     </div>
   )
 }

@@ -20,9 +20,6 @@ const Gallery = () => {
                 fluid {
                   ...GatsbyImageSharpFluid
                 }
-                # fixed(width: 300, height: 125) {
-                #   ...GatsbyImageSharpFixed
-                # }
               }
             }
           }
@@ -32,6 +29,8 @@ const Gallery = () => {
   `)
   const projects = pageQuery.allProjectsJson.edges
 
+
+  console.log(projects)
   return (
     <div className="galleryContainer">
       {projects.map(({ node }) => (
