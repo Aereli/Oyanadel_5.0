@@ -32,12 +32,12 @@ const Hero = ({ github, linkedin}) => {
       </div>
 
       <div className="heroBannerContainer">
-        <div className="heroSunContainer">
-          <div className="heroSun" />
-        </div>
 
+            <div className="heroSun" />
         <div className="heroBanner">
-          <div>
+          {/* <div className="heroSunContainer"> */}
+          {/* </div> */}
+          <div className="bannerText">
             <h1>FULL-STACK</h1>
             <h1>WEB DEVELOPER</h1>
           </div>
