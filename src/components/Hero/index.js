@@ -13,9 +13,8 @@ const Hero = ({ github, linkedin}) => {
     <>
       <div className="heroTitlesContainer">
         <h1>Eric Oyanadel</h1>
-        <h2>based in Miami, Florida</h2> 
         <div className="heroAnchors">
-        <a href="https://github.com/Aereli" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Aereli" target="_blank" rel="noreferrer">
             <img src={githubImg} alt="github" />
           </a>
           <a href={Resume} download>
@@ -32,16 +31,14 @@ const Hero = ({ github, linkedin}) => {
       </div>
 
       <div className="heroBannerContainer">
-
-            <div className="heroSun" />
         <div className="heroBanner">
-          {/* <div className="heroSunContainer"> */}
-          {/* </div> */}
+          <div className="heroSun" />
           <div className="bannerText">
-            <h1>FULL-STACK</h1>
-            <h1>WEB DEVELOPER</h1>
+            <h2>FULL-STACK</h2>
+            <h2>WEB DEVELOPER</h2>
           </div>
         </div>
+
       </div>
     </>
   )
