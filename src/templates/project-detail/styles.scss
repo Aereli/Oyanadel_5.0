@@ -1,0 +1,52 @@
+@import "../../assets/colors";
+@import "../../assets/globals.scss";
+
+.projectDetailContainer {
+  @extend %site-container;
+  
+  hr {
+    margin: 50px 0;
+    border: 1px solid $tertiary-color;
+  }
+  
+  h1 {
+    color: $secondary-color;
+    text-align: center;
+  }
+
+  ul {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+   li  {
+     list-style-type: none;
+     a {
+       @include link($secondary-color);
+      }  
+      
+      a:hover {
+        @include link($tertiary-color);
+      }
+    }
+  }
+
+  p {
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: $secondary-color;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+      color: $tertiary-color;
+    }  
+  }
+
+}
