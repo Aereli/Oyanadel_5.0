@@ -31,22 +31,23 @@ const SingleProject = ({
 
   return (
     <div ref={tiltRef} className="singleContainer">
+
       <div className="singleImage">
         <Img  key={id} fluid={image} alt={title}/>
       </div>
+
       <div className="singleContent">
         <h1 id="title">{title}</h1>
         <p id="main-desc">{sub}</p>
-
         <div className="singleLinks">
           <Link to={github} target="_blank" rel="noopener noreferrer">
             View Github
           </Link>
           <VideoModal video={video} />
           <a>View more</a>
-
         </div>
       </div>
+
     </div>
   )
 }

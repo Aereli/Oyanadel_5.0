@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import logo from '../../images/logo.svg'
 import "./styles.scss"
 
 const Header = ({ siteTitle }) => {
@@ -9,7 +10,7 @@ const Header = ({ siteTitle }) => {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">{siteTitle}</Link>
+          <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
         <div className="toggle-button" onClick={() => setToggle(!toggle)}>
           <span className="bar"></span>
@@ -19,7 +20,7 @@ const Header = ({ siteTitle }) => {
         <div className={["navbarLinks", toggle && "active"].join(" ")}>
           <ul>
             <li>
-              <Link to="/projects">Work</Link>
+              <Link to="/projects">Works</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
