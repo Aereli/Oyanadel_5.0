@@ -10,7 +10,7 @@ import Resume from "../../images/EricOyanadel_Pro_2020.pdf"
 const Hero = ({ github, linkedin}) => {
 
   return (
-    <>
+    <section className="heroContainer">
       <div className="heroTitlesContainer">
         <h1>Eric Oyanadel</h1>
         <div className="heroAnchors">
@@ -40,7 +40,7 @@ const Hero = ({ github, linkedin}) => {
         </div>
 
       </div>
-    </>
+    </section>
   )
 }
 
