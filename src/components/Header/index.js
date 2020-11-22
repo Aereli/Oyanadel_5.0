@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import logo from '../../images/logo.svg'
 import "./styles.scss"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
   return (
     <header>
@@ -12,7 +12,13 @@ const Header = ({ siteTitle }) => {
         <div className="logo">
           <Link to="/"><img src={logo} alt="logo" /></Link>
         </div>
-        <div className="toggle-button" onClick={() => setToggle(!toggle)}>
+        <div 
+          className="toggle-button" 
+          onClick={() => setToggle(!toggle)} 
+          onKeyDown={() => setToggle(!toggle)} 
+          role="button"   
+          tabIndex={0}
+        >
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>

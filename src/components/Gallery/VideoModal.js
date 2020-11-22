@@ -31,13 +31,13 @@ const VideoModal = ({ video }) => {
       >
         <video
           autoPlay
-          track=""
           style={{
             width: "80%",
             objectFit: "contain",
           }}
         >
           <source src={video} />
+          <track kind="captions" srclang="en" label="english_captions" />
         </video>
       </Modal>
     </div>

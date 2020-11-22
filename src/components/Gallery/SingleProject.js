@@ -5,7 +5,6 @@ import "./styles.scss"
 import VanillaTilt from 'vanilla-tilt'
 import VideoModal from "./VideoModal"
 
-
 const SingleProject = ({ 
   image,
   title,
@@ -16,21 +15,21 @@ const SingleProject = ({
   slug
 }) => {
 
-  const tiltRef = useRef(null)
+  const titleRef = useRef(null)
 
 // https://www.npmjs.com/package/vanilla-tilt
   useEffect(() => {
-    VanillaTilt.init(tiltRef.current, {
+    VanillaTilt.init(titleRef.current, {
       max: 10,
       speed: 400,
       glare: true,
       'max-glare': 0.5,
     })
-    return () => tiltRef.current.vanillaTilt.destroy()
+    return () => titleRef.current.vanillaTilt.destroy()
   }, [])
 
   return (
-    <div ref={tiltRef} className="singleContainer">
+    <div ref={titleRef} className="singleContainer">
 
       <div className="singleImage">
         <Img  key={id} fluid={image} alt={title}/>
