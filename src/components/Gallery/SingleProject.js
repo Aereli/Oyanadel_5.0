@@ -9,11 +9,11 @@ import VideoModal from "./VideoModal"
 const SingleProject = ({ 
   image,
   title,
-  url,
   sub,
   id,
   github,
   video,
+  slug
 }) => {
 
   const tiltRef = useRef(null)
@@ -44,7 +44,7 @@ const SingleProject = ({
             View Github
           </Link>
           <VideoModal video={video} />
-          <a>View more</a>
+          <Link to={`/projects/${slug}`}>View More</Link>
         </div>
       </div>
 

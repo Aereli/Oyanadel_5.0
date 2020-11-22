@@ -43,6 +43,7 @@ const Gallery = () => {
           github={node.github}
           url={node.url}
           video={node.video}
+          slug={node.slug}
         />
       ))}
     </div>

@@ -2,7 +2,7 @@
   {
     "title": "ShipSip",
     "sub": "ReactJs, Shippo API, Ruby on Rails, MySql, Devise gem, CSS",
-    "slug": "Package Shipping Website",
+    "slug": "shipship",
     "url": "https://wyn-shipship.herokuapp.com/",
     "image": "./images/shipship.png",
     "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
@@ -13,7 +13,7 @@
   {
     "title": "Barhop",
     "sub": "ReactJS, HTML, CSS, Yelp API",
-    "slug": "Bar Listing Website",
+    "slug": "barhop",
     "url": "http://barhop-wyncode.herokuapp.com/",
     "image": "./images/barhop.png",
     "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
@@ -24,7 +24,7 @@
   {
     "title": "Covid-19",
     "sub": "NextJs, CSS, API",
-    "slug": "Covid Virus Information",
+    "slug": "covid19",
     "url": "https://wonderful-agnesi-d186b6.netlify.app/",
     "image": "./images/covid19.png",
     "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
@@ -35,7 +35,7 @@
   {
     "title": "aereli Art",
     "sub": "Gatsby, React, Graphql, ",
-    "slug": "Art Page",
+    "slug": "aereli-art",
     "url": "http://aereli.com",
     "image": "./images/aereliArt.png",
     "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load.",
@@ -46,7 +46,7 @@
   {
     "title": "splttr",
     "sub": "Vanilla JS, HTML, CSS",
-    "slug": "Tip Calculator",
+    "slug": "tip-calculator",
     "url": "https://aereli.github.io/Tip-Calculator/",
     "image": "./images/splttr.png",
     "description": "Simple tip calculator for partys of any size using Pure Vanilla Javascript",
@@ -57,7 +57,7 @@
   {
     "title": "Wyn-Generator",
     "sub": "React, Javascript, HTML, CSS",
-    "slug": "Student Generator",
+    "slug": "wyn-generator",
     "url": "https://wyn-generator.netlify.app/",
     "image": "./images/generator.png",
     "description": "Selects a random student from the wyncode cohort36 Api.",
