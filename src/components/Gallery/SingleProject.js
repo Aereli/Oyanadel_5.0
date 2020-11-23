@@ -39,11 +39,13 @@ const SingleProject = ({
         <h1 id="title">{title}</h1>
         <p id="main-desc">{sub}</p>
         <div className="singleLinks">
-          <Link to={github} target="_blank" rel="noopener noreferrer">
+         { github &&
+           <Link to={github} target="_blank" rel="noopener noreferrer">
             View Github
           </Link>
-          <VideoModal video={video} />
-          <Link to={`/projects/${slug}`}>View More</Link>
+         } 
+        {video && <VideoModal video={video} /> }
+        <Link to={`/projects/${slug}`}>View More</Link> 
         </div>
       </div>
 

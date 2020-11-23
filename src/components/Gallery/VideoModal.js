@@ -10,9 +10,11 @@ const VideoModal = ({ video }) => {
 
   return (
     <div>
-      <button className="button" onClick={handleOpen}>
+      {video &&
+        <button className="button" onClick={handleOpen}>
         Quick Preview! 
       </button>
+      }
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
