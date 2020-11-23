@@ -32,21 +32,25 @@ const Gallery = () => {
 
   console.log(projects)
   return (
-    <div className="galleryContainer">
-      {projects.map(({ node }) => (
-        <Single
-          key={node.id}
-          title={node.title}
-          sub={node.sub}
-          description={node.description}
-          image={node.image.childImageSharp.fluid}
-          github={node.github}
-          url={node.url}
-          video={node.video}
-          slug={node.slug}
-        />
-      ))}
-    </div>
+    <>
+      <h1 className="galleryTitle">Projects</h1>
+      <h2 className="galleryDesc">Below are a few of my projects, please keep in mind that some are local copies of the original site and may have longer wait time when loading.</h2>
+      <div className="galleryContainer">
+        {projects.map(({ node }) => (
+          <Single
+            key={node.id}
+            title={node.title}
+            sub={node.sub}
+            description={node.description}
+            image={node.image.childImageSharp.fluid}
+            github={node.github}
+            url={node.url}
+            video={node.video}
+            slug={node.slug}
+          />
+        ))}
+      </div>
+    </>
   )
 }
 

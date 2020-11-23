@@ -7,6 +7,17 @@
   flex-wrap: wrap;
 }
 
+.galleryTitle {
+  color: $white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.galleryDesc {
+  color: $tertiary-color;
+  padding: 2rem;
+}
+
 .singleContainer {
   position: relative;
   min-width: 47%;

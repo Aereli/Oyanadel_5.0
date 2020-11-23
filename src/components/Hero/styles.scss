@@ -3,23 +3,27 @@
 
 .heroContainer {
   @extend %site-container;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .heroTitlesContainer {
-  margin: 10vh 0;
-  z-index: 5;
-
+  padding: 40px 0;
+  
   h1 {
     margin: 0;
     width: 50%;
     letter-spacing: 5px;
     color: $tertiary-color;
-    font-size: max(12vw);
+    font-size: 5rem;
     font-weight: 500;
   }
-
+  
   .heroAnchors {
-    margin: 5vh 0;
+    padding: 50px 0;
     
     & a {
       padding-right: 60px;
@@ -34,7 +38,6 @@
   .heroBanner {
     position: relative;
     background: linear-gradient(0deg, rgba(30,39,73,1) 30%, rgba(30,39,73,0) 100%);
-    padding-bottom: 100px;
   }
 
   .bannerText {
@@ -43,7 +46,7 @@
     color: $white;
 
     h2 {
-      font-size: 4vw;
+      font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 15px;
     } 
@@ -58,8 +61,8 @@
     bottom: 0;
     z-index: -1;
     border-radius: 50%;
-    width: 70%;
-    padding-bottom: 70%;
+    width: 65%;
+    padding-bottom: 65%;
     background: $hero-sun;
   }
 }
@@ -89,11 +92,10 @@
   }
 
   .heroBannerContainer {
-    right: 0;
+    justify-content: center;
+    text-align: center;
 
     .heroBanner {
-      padding-bottom: 50px;
-
       h2 { 
         font-size: 2rem;
         letter-spacing: 5px;

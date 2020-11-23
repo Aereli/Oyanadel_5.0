@@ -9,14 +9,14 @@
   align-items: center;
   background-color: $primary-color;
   height: 6vh;
-  margin-top: 20px;
 }
 
-.logo {
-  padding: 0.8rem;
+.logo img {
+  width: 100px;
+  padding: 1rem 0;
 
-  & img:hover {
-    width: 130px;
+  &:hover {
+    width: 110px;
   }
 }
 

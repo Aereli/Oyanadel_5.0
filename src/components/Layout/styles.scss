@@ -3,8 +3,10 @@
 
 .layoutFooter {
   position: fixed;
-  width: 100%;
   bottom: 0;
+  width: 100%;
+  background-color: $primary-color;
+  z-index: 6;
 }
 
 .footerText {

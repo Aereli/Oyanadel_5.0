@@ -5,7 +5,7 @@
     "slug": "shipship",
     "url": "https://wyn-shipship.herokuapp.com/",
     "image": "./images/shipship.png",
-    "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information.",
+    "description": "This Full Stack site groups different packaging services like UPS, FEDEX and USPS and provides full packaging labels and information. The site was built with two other Developers and I mainly was focused on building the backened which consisted of using Ruby. The main gems used were Rails of course, and Devise to build the user login and credentials. MySQl gather the user database information. ",
     "tech": "ReactJs, JavaScript, ReactScroll, ReactSpring, Ruby on Rails, Devise Gem, Formspree",
     "github": "https://github.com/Aereli/ShipShip",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1592939491/OyanadelPage/shipship.mov"
@@ -16,7 +16,7 @@
     "slug": "barhop",
     "url": "http://barhop-wyncode.herokuapp.com/",
     "image": "./images/barhop.png",
-    "description": "Site built to provide users with location and details on nearest bars, using the yelp API",
+    "description": "Site built to provide users with location and details on nearest bars, using the yelp API. Biggest hurdle building this site was dealing with CORS and figuring out a way to extract more than the initial 100 requests. I had two teamates help in building this site.",
     "tech": "ReactJs, Yelp API, HTML, CSS",
     "github": "https://github.com/Aereli/Bar_hop_final",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1592856169/OyanadelPage/barhop.mov"
@@ -27,7 +27,7 @@
     "slug": "covid19",
     "url": "https://wonderful-agnesi-d186b6.netlify.app/",
     "image": "./images/covid19.png",
-    "description": "Using an API I found From Mathdroid i was able to build a simple covid fact page displaying information from different regions",
+    "description": "Using an API I found From Mathdroid I was able to build a simple covid fact page displaying information from different regions. Wes Bos, helped in the creation of this site.",
     "tech": "NextJs, MathDroid API",
     "github": "https://github.com/Aereli/covid-19-facts",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1592939613/OyanadelPage/covid19.mov"
@@ -38,7 +38,7 @@
     "slug": "aereli-art",
     "url": "http://aereli.com",
     "image": "./images/aereliArt.png",
-    "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load.",
+    "description": "Personal artwork queried from datasource using Graphql built on a Gatsby framework to load images a lighting fast speed, using lazy load. This is my first attempt at using GatsbyJS with gatsby Image. Image are pre-loaded on build that way they render faster and show a glossy effect instead of no image rendering on load time.",
     "tech": "React, Gatsby, Graphql",
     "github": "https://github.com/Aereli/AereliArt",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1592939829/OyanadelPage/Aereli.mov"
@@ -60,7 +60,7 @@
     "slug": "wyn-generator",
     "url": "https://wyn-generator.netlify.app/",
     "image": "./images/generator.png",
-    "description": "Selects a random student from the wyncode cohort36 Api.",
+    "description": "Selects a random student from the Wyncode cohort36 Api. This Site was a small project currently not working since the orignial database no longer exists. The Demo shows a good example of how the site used to perform. ",
     "tech": "React, Javascript, HTML, CSS",
     "github": "https://github.com/Aereli/Tip-Calculator",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1593023027/OyanadelPage/wyn-generator.mov"
