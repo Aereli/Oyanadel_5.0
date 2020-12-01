@@ -5,6 +5,7 @@
   @extend %site-container;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 100px;
 }
 
 .galleryTitle {
@@ -24,17 +25,16 @@
   margin: 1%;
   max-height: 260px;
   overflow: hidden;
-  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
 
-  &:hover{
-
+  &:hover {
     .singleContent {
       bottom: 10%;
       z-index: 5;
-      transition: .5s ease-in-out;
+      transition: 0.5s ease-in-out;
       opacity: 1;
     }
-    
+
     .singleImage::after {
       content: "";
       width: 100%;
@@ -53,23 +53,23 @@
   color: $white;
   opacity: 0;
 
-  
   .singleLinks {
     padding-top: 15px;
     display: flex;
     justify-content: space-evenly;
-    
+
     & a {
-      @include link($white)
+      @include link($white);
     }
 
-    & a:hover, button:hover {
+    & a:hover,
+    button:hover {
       cursor: pointer;
       transform: scale(1.3);
       color: $tertiary-color;
     }
   }
-  
+
   .button {
     font-size: 1rem;
     font-family: "Josefin Sans", sans-serif;
@@ -80,7 +80,7 @@
 
     &:hover {
       cursor: pointer;
-    }  
+    }
   }
 }
 
@@ -89,7 +89,6 @@
 }
 
 @media (max-width: 700px) {
-
   .singleContainer {
     position: relative;
     min-width: 100%;

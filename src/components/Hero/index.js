@@ -5,18 +5,17 @@ import githubImg from "../../images/Vector.svg"
 import fileImg from "../../images/Vector2.svg"
 import linkedinImg from "../../images/Vector3.svg"
 import Resume from "../../images/EricOyanadel_Pro_2020.pdf"
-import { gsap } from 'gsap/all';
+import { gsap } from "gsap/all"
 
 const Hero = () => {
-
   const sunRef = useRef()
 
   useEffect(() => {
     gsap.to(sunRef.current, {
       y: -200,
       duration: 15,
-      delay: 3,
-      scale: 1.3
+      delay: 2,
+      scale: 1.3,
     })
   }, [])
 
@@ -43,13 +42,12 @@ const Hero = () => {
 
       <div className="heroBannerContainer">
         <div className="heroBanner">
-          <div className="heroSun" ref={sunRef}/>
+          <div className="heroSun" ref={sunRef} />
           <div className="bannerText">
             <h2>FULL-STACK</h2>
             <h2>WEB DEVELOPER</h2>
           </div>
         </div>
-
       </div>
     </section>
   )

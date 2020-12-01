@@ -29,13 +29,16 @@ const Gallery = () => {
   `)
   const projects = pageQuery.allProjectsJson.edges
 
-
   console.log(projects)
   return (
     <>
       <h1 className="galleryTitle">Projects</h1>
-      <h2 className="galleryDesc">Below are a few of my projects, please keep in mind that some are local copies of the original site and may have longer wait time when loading.</h2>
       <div className="galleryContainer">
+        <h2 className="galleryDesc">
+          Below are a few of my projects, please keep in mind that some are
+          local copies of the original site and may have longer wait time when
+          loading.
+        </h2>
         {projects.map(({ node }) => (
           <Single
             key={node.id}

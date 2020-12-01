@@ -1,5 +1,38 @@
 [
   {
+    "title": "NBC Telemundo Corporate Site",
+    "sub": "React, Gatsby, Graphql, AWS S3, ",
+    "slug": "telemundo",
+    "url": "https://staging.d11ymp1rdszc7w.amplifyapp.com/",
+    "image": "./images/telemundo.png",
+    "description": "I was a frontend developer along side Jonathan Vasquez helping build the NBC Telemundo Corporate site. This is a static site so Gastby Js and Graphql were used to help build it. The site domain is currently not up, but this URL shows an exact replica. Different tools such as GSAP and packages like react-slick and react-responsive were just a few of the packages used in helping bring this project together.",
+    "tech": "React, Gatsby, Graphql, AWS S3,",
+    "github": null,
+    "video": null
+  },
+  {
+    "title": "Empire Medical",
+    "sub": "PHP, HTML, BootStrap, CSS",
+    "slug": "empire-medical",
+    "url": "https://www.empiremedicaltraining.com/",
+    "image": "./images/empire-medical.png",
+    "description": "Joined Empire Medical company to help on with the implementaiton of git and github for their code versioning control and various style changes in accordence with the UX/UI designer. Site is build primarily all in BootStrap and html, with various parts using PHP.",
+    "tech": "PHP, HTML, BootStrap, CSS",
+    "github": null,
+    "video": null
+  },
+  {
+    "title": "Vote from Home",
+    "sub": "Nextjs, CSS, Sendgrid",
+    "slug": "vote-from-home",
+    "url": "https://votingfromhomemiami.netlify.app/",
+    "image": "./images/vote-home.png",
+    "description": "Freelance project commisioned from the Code For Miami channel. Project was not completed due to budget, but still run emails for testing using the Sendgrid API. Information is taken from user and sent over securely to Admins email using a prebuilt template for mailing. Original UX/UI designs were given for this project. ",
+    "tech": "Nextjs, CSS, Sendgrid",
+    "github": "https://github.com/Aereli/VoteByMail",
+    "video": null
+  },
+  {
     "title": "ShipSip",
     "sub": "ReactJs, Shippo API, Ruby on Rails, MySql, Devise gem, CSS",
     "slug": "shipship",
@@ -64,27 +97,5 @@
     "tech": "React, Javascript, HTML, CSS",
     "github": "https://github.com/Aereli/Tip-Calculator",
     "video": "https://res.cloudinary.com/aereli/video/upload/v1593023027/OyanadelPage/wyn-generator.mov"
-  },
-  {
-    "title": "Empire Medical",
-    "sub": "PHP, HTML, BootStrap, CSS",
-    "slug": "empire-medical",
-    "url": "https://www.empiremedicaltraining.com/",
-    "image": "./images/empire-medical.png",
-    "description": "Joined Empire Medical company to help on with the implementaiton of git and github for their code versioning control and various style changes in accordence with the UX/UI designer. Site is build primarily all in BootStrap and html, with various parts using PHP.",
-    "tech": "PHP, HTML, BootStrap, CSS",
-    "github": null,
-    "video": null
-  },
-  {
-    "title": "Vote from Home",
-    "sub": "Nextjs, CSS, Sendgrid",
-    "slug": "vote-from-home",
-    "url": "https://votingfromhomemiami.netlify.app/",
-    "image": "./images/vote-home.png",
-    "description": "Freelance project commisioned from the Code For Miami channel. Project was not completed due to budget, but still run emails for testing using the Sendgrid API. Information is taken from user and sent over securely to Admins email using a prebuilt template for mailing. Original UX/UI designs were given for this project. ",
-    "tech": "Nextjs, CSS, Sendgrid",
-    "github": "https://github.com/Aereli/VoteByMail",
-    "video": null
   }
 ]
