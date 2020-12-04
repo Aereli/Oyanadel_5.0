@@ -1,5 +1,16 @@
 [
   {
+    "title": "Gatsby Pizza",
+    "sub": "React, Gatsby, Graphql, Sanity IO, Beer api, NodeMail",
+    "slug": "pizza-gatsby",
+    "url": "https://pizza-gatsby.netlify.app/",
+    "image": "./images/gatsby-pizza.png",
+    "description": "Became Gatsby certified after this build via WesBos. This Site shows excellent example of Gatsby's potential. Here you can see how it uses a Headless CMS with Sanity IO and Serverless functions built on the backend. Checkout the github to see its lighthouse results!",
+    "tech": "React, Gatsby, Graphql, Sanity IO, Beer api, NodeMail",
+    "github": "https://github.com/Aereli/Pizza-Gastby",
+    "video": null
+  },
+  {
     "title": "NBC Telemundo Corporate Site",
     "sub": "React, Gatsby, Graphql, AWS S3, ",
     "slug": "telemundo",
