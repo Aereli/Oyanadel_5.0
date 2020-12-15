@@ -2,18 +2,14 @@
 @import "../../assets/globals";
 
 .layoutFooter {
-  position: fixed;
-  bottom: 0;
-  padding: 20px 0;
-  width: 100%;
+  @extend %site-container;
   background-color: $primary-color;
   z-index: 6;
 }
 
 .footerText {
   text-align: center;
-  margin: auto;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0;
   font-weight: 200;
   color: $white;
 

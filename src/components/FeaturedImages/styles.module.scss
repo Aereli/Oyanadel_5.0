@@ -1,0 +1,28 @@
+@import "../../assets/globals.scss";
+@import "../../assets/colors";
+
+.container {
+  @extend %site-container;
+
+  text-align: center;
+  color: $tertiary-color;
+
+  h1 {
+    font-weight: 200;
+  }
+}
+
+.images {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.singleImage {
+  padding: 1rem;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
