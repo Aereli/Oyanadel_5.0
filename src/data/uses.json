@@ -1,0 +1,72 @@
+[
+  {
+    "usesInfo": [
+      {
+        "id": 1,
+        "title": "Extensions",
+        "content": [
+          {
+            "id": 1,
+            "title": "GruvBox Material Dark",
+            "url": "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
+            "description": "for my VSCode Theme"
+          },
+          {
+            "id": 2,
+            "title": "Path Intellisense",
+            "url": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense",
+            "description": "plugin that autocompletes file names"
+          },
+          {
+            "id": 3,
+            "title": "Bracket Pair Colorizer",
+            "url": "https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2",
+            "description": "allows matching brackets to be identified with colours"
+          },
+          {
+            "id": 4,
+            "title": "VS Code ES7 React/Redux/React-Native/JS snippets",
+            "url": "https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets",
+            "description": "provides JavaScript and React/Redux snippets in ES7"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Hardware",
+        "content": [
+          {
+            "id": 1,
+            "description": "MacBook Pro Retina, 13-inch, Mid 2014 | 2.6 GHz Dual-Core Intel Core i5"
+          },
+          {
+            "id": 2,
+            "description": "Samsung 32-inch Monitor "
+          },
+          {
+            "id": 3,
+            "description": "Iphone 11"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Software",
+        "content": [
+          {
+            "id": 1,
+            "description": "Micorsoft Vscode as my main code editor"
+          },
+          {
+            "id": 2,
+            "description": "Figma for UI Designing"
+          },
+          {
+            "id": 3,
+            "description": "Adobe Illustrator and Photoshop for image/SVG editing"
+          }
+        ]
+      }
+    ]
+  }
+]
