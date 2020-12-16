@@ -16,9 +16,15 @@ function Uses({ data }) {
           <h1>Hi There! This page shows my setup and software that I use.</h1>
           <h2>
             WesBos inspired this page and showcased it on his site!!{" "}
-            <span role="img">👇</span>
+            <span role="img" aria-label="finger">
+              👇
+            </span>
           </h2>
-          <a href="wesbos.com/uses" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wesbos.com/uses"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             wesbos.com
           </a>
         </div>
