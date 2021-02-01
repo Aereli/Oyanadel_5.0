@@ -4,9 +4,10 @@ import "./styles.scss"
 import githubImg from "../../images/Vector.svg"
 import fileImg from "../../images/Vector2.svg"
 import linkedinImg from "../../images/Vector3.svg"
-import Resume from "../../images/EricOyanadel_Pro_2020.pdf"
+import Resume from "../../images/EricOyanadel_Pro_2021.pdf"
 import { gsap } from "gsap/all"
 
+// TODO: update SVG images with a query instead of direct import
 const Hero = () => {
   const sunRef = useRef()
 
