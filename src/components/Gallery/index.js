@@ -37,7 +37,7 @@ const Gallery = () => {
         <h2 className="galleryDesc">
           Below are a few of my projects, please keep in mind that some are
           local copies of the original site and may have longer wait time when
-          loading.
+          loading (cold start).
         </h2>
         {projects.map(({ node }) => (
           <Single

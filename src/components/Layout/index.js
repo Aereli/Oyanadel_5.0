@@ -30,15 +30,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer className="layoutFooter">
           <p className="footerText">
-            © {new Date().getFullYear()}, Built from scratch using
-            <a
-              href="https://www.gatsbyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              GatsbyJs
-            </a>
+            © {new Date().getFullYear()}, Eric Oyanadel
           </p>
         </footer>
       </div>

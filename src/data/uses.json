@@ -28,6 +28,12 @@
             "title": "VS Code ES7 React/Redux/React-Native/JS snippets",
             "url": "https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets",
             "description": "provides JavaScript and React/Redux snippets in ES7"
+          },
+          {
+            "id": 5,
+            "title": "ALOT of other extensions",
+            "url": "#",
+            "description": "Did you read all of these?!"
           }
         ]
       },
@@ -37,7 +43,7 @@
         "content": [
           {
             "id": 1,
-            "description": "MacBook Pro Retina, 13-inch, Mid 2014 | 2.6 GHz Dual-Core Intel Core i5"
+            "description": "MacBook Pro, 14-inch, 2023 | 16GB Apple M3"
           },
           {
             "id": 2,
@@ -45,7 +51,7 @@
           },
           {
             "id": 3,
-            "description": "Iphone 11"
+            "description": "Iphone 16 Pro"
           }
         ]
       },
@@ -55,7 +61,7 @@
         "content": [
           {
             "id": 1,
-            "description": "Micorsoft Vscode as my main code editor"
+            "description": "Micorsoft Vscode as my main code editor/ Xcode for iOS development"
           },
           {
             "id": 2,

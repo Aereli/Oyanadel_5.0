@@ -14,19 +14,6 @@ function Uses({ data }) {
       <div className={styles.container}>
         <div className={styles.header}>
           <h1>Hi There! This page shows my setup and software that I use.</h1>
-          <h2>
-            WesBos inspired this page and showcased it on his site!!{" "}
-            <span role="img" aria-label="finger">
-              👇
-            </span>
-          </h2>
-          <a
-            href="https://wesbos.com/uses"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            wesbos.com
-          </a>
         </div>
         <Img fluid={data.file.childImageSharp.fluid} alt="computer desk" />
 
