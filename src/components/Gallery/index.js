@@ -29,7 +29,6 @@ const Gallery = () => {
   `)
   const projects = pageQuery.allProjectsJson.edges
 
-  console.log(projects)
   return (
     <>
       <h1 className="galleryTitle">Projects</h1>

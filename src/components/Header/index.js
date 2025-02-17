@@ -27,12 +27,12 @@ const Header = () => {
         </div>
         <div className={["navbarLinks", toggle && "active"].join(" ")}>
           <ul>
-            <li>
+            {/* <li>
               <Link to="/projects">Works</Link>
             </li>
             <li>
               <Link to="/uses">Uses</Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/contact">Contact</Link>
             </li>

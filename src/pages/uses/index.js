@@ -2,23 +2,24 @@ import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import SEO from "../../components/seo"
-import Img from "gatsby-image"
-import styles from "./styles.module.scss"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import "./styles.module.scss"
 
 function Uses({ data }) {
   const uses = data.allUsesJson.nodes[0].usesInfo
+  const image = getImage(data.file.childImageSharp)
 
   return (
     <Layout>
       <SEO title="Uses" />
-      <div className={styles.container}>
-        <div className={styles.header}>
+      <div className={"container"}>
+        <div className={"header"}>
           <h1>Hi There! This page shows my setup and software that I use.</h1>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid} alt="computer desk" />
+        <GatsbyImage image={image} alt="computer desk" />
 
         {uses.map(item => (
-          <div className={styles.content}>
+          <div className={"content"}>
             <h2 key={item.id}>{item.title}</h2>
             {item.content.map(content => (
               <p>

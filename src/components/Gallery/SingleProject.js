@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import "./styles.scss"
 import VanillaTilt from "vanilla-tilt"
@@ -22,7 +22,7 @@ const SingleProject = ({ image, title, sub, id, github, video, slug }) => {
   return (
     <div ref={titleRef} className="singleContainer">
       <div className="singleImage">
-        <Img key={id} fluid={image} alt={title} />
+        <GatsbyImage image={image} alt={title} />
       </div>
 
       <div className="singleContent">
