@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import Layout from "../../components/Layout/index"
 import SEO from "../../components/seo"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import VideoModal from "../../components/Gallery/VideoModal"
 import "./styles.module.scss"
 
 export const query = graphql`
@@ -59,7 +58,7 @@ const ProjectDetail = ({ data }) => {
               </a>
             </li>
           )}
-          {project.video && <VideoModal video={project.video} />}
+          {/* {project.video && <VideoModal video={project.video} />} */}
         </ul>
 
         <p>Tech Used: {project.tech}</p>
