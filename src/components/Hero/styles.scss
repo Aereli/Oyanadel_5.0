@@ -1,5 +1,5 @@
-@import "../../assets/globals.scss";
-@import "../../assets/colors";
+@use "../../assets/globals" as globals;
+@use "../../assets/colors" as colors;
 
 .heroContainer {
   @extend %site-container;
@@ -17,7 +17,7 @@
     margin: 0;
     width: 50%;
     letter-spacing: 5px;
-    color: $tertiary-color;
+    color: colors.$tertiary-color; // Use colors namespace for $tertiary-color
     font-size: 5rem;
     font-weight: 500;
   }
@@ -51,7 +51,7 @@
   .bannerText {
     position: relative;
     z-index: 5;
-    color: $white;
+    color: colors.$white; // Use colors namespace for $white
 
     h2 {
       font-size: 2.5rem;
@@ -71,11 +71,11 @@
     border-radius: 50%;
     width: 65%;
     padding-bottom: 65%;
-    background: $hero-sun;
+    background: colors.$hero-sun; // Use colors namespace for $hero-sun
   }
 }
 
-// Medeia Queries
+// Media Queries
 @media screen and (min-width: 1280px) {
   .heroTitlesContainer {
     h1 {
@@ -88,12 +88,14 @@
     }
   }
 }
-@media #{$display-breakpoint} {
+
+@media #{globals.$display-breakpoint} {
   .heroTitlesContainer {
     h1 {
       font-size: 4.5rem;
       line-height: 5rem;
     }
+
     .heroAnchors {
       display: none;
     }

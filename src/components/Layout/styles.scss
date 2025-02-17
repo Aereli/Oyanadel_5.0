@@ -1,9 +1,9 @@
-@import "../../assets/colors";
-@import "../../assets/globals";
+@use "../../assets/colors" as colors;
+@use "../../assets/globals" as globals;
 
 .layoutFooter {
   @extend %site-container;
-  background-color: $primary-color;
+  background-color: colors.$primary-color; // Use colors namespace for $primary-color
   z-index: 6;
 }
 
@@ -11,9 +11,11 @@
   text-align: center;
   padding: 0.5rem 0;
   font-weight: 200;
-  color: $white;
+  color: colors.$white; // Use colors namespace for $white
 
   a {
-    @include link($white);
+    @include globals.link(
+      colors.$white
+    ); // Use globals namespace for link mixin
   }
 }

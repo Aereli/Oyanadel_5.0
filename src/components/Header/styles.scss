@@ -1,5 +1,5 @@
-@import "../../assets/globals.scss";
-@import "../../assets/colors";
+@use "../../assets/globals" as globals;
+@use "../../assets/colors" as colors;
 
 .navbar {
   @extend %site-container;
@@ -7,7 +7,7 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  background-color: $primary-color;
+  background-color: colors.$primary-color;
   height: 6vh;
 }
 
@@ -33,7 +33,7 @@
   }
 
   a {
-    @include link($white);
+    @include globals.link(colors.$white); // Reference the mixin properly
     display: block;
     text-decoration: none;
     padding-left: 75px;
@@ -42,64 +42,7 @@
     font-family: "Josefin Sans", sans-serif;
 
     &:hover {
-      color: $secondary-color;
+      color: colors.$secondary-color;
     }
-  }
-}
-
-.toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: $white;
-  border-radius: 10px;
-}
-
-@media (max-width: 700px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .toggle-button {
-    display: flex;
-  }
-
-  .navbarLinks {
-    display: none;
-    width: 100%;
-    z-index: 5;
-    height: 94vh;
-
-    ul {
-      background-color: $white;
-      width: 100%;
-      height: min-content;
-      flex-direction: column;
-    }
-
-    li {
-      border: 2px solid $secondary-color;
-      text-align: center;
-    }
-
-    a {
-      @include link($primary-color);
-      padding: 2rem 1rem;
-    }
-  }
-
-  .navbarLinks.active {
-    display: flex;
   }
 }

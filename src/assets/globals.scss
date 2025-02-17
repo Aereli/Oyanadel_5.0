@@ -1,12 +1,13 @@
+@use "../assets/colors" as colors;
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,700;1,500&display=swap");
-@import "../assets/colors";
+// @import "../assets/colors";
 // @import "../assets/typography";
 
 body {
   margin: 0;
   font-family: "Josefin Sans", sans-serif;
   // font-family: "Gilbert", sans-serif;
-  background: $primary-color;
+  background: colors.$primary-color;
 }
 
 $display-breakpoint: "only screen and (max-width : 770px)";
@@ -15,7 +16,7 @@ $display-breakpoint: "only screen and (max-width : 770px)";
   max-width: 1280px;
   margin: 2rem auto;
   padding: 0 30px;
-  border: 0.1px solid $secondary-color;
+  border: 0.1px solid colors.$secondary-color;
   border-top: none;
 }
 
@@ -31,21 +32,19 @@ $display-breakpoint: "only screen and (max-width : 770px)";
 // to the $link default value. This way not all colors have to be specified.
 // Userful for when the a link should be the same color for all pseudo classes
 @mixin link($link, $visited: $link, $hover: $link, $active: $link) {
-  & {
-    color: $link;
-    text-decoration: none;
+  color: $link;
+  text-decoration: none;
 
-    &:visited {
-      color: $visited;
-    }
+  & :visited {
+    color: $visited;
+  }
 
-    &:hover {
-      color: $hover;
-    }
+  & :hover {
+    color: $hover;
+  }
 
-    &:active,
-    &:focus {
-      color: $active;
-    }
+  & :active,
+  & :focus {
+    color: $active;
   }
 }

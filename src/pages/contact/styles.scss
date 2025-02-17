@@ -1,11 +1,11 @@
-@import "../../assets/globals.scss";
-@import "../../assets/colors";
+@use "../../assets/globals" as globals;
+@use "../../assets/colors" as colors;
 
 .contactContainer {
   height: 90vh;
   text-align: center;
-  color: $white;
-  
+  color: colors.$white; // Use colors namespace for $white
+
   h1 {
     margin: 0;
     padding-top: 15vh;
@@ -13,6 +13,7 @@
     letter-spacing: 10px;
     font-weight: 400;
   }
+
   h2 {
     letter-spacing: 2px;
     font-weight: 300;
@@ -23,12 +24,15 @@
   img {
     width: 55px;
     padding: 1rem;
-    filter: drop-shadow(0px 0px 5px $white);
+    filter: drop-shadow(
+      0px 0px 5px colors.$white
+    ); // Use colors namespace for $white
   }
   padding-bottom: 10vh;
 }
 
-@media #{$display-breakpoint} {
+@media #{globals.$display-breakpoint} {
+  // Use globals namespace for display-breakpoint
   .contactContainer {
     h1 {
       font-size: 2rem;

@@ -1,5 +1,5 @@
-@import "../../assets/globals.scss";
-@import "../../assets/colors";
+@use "../../assets/colors" as colors;
+@use "../../assets/globals" as globals;
 
 .galleryContainer {
   @extend %site-container;
@@ -9,13 +9,13 @@
 }
 
 .galleryTitle {
-  color: $white;
+  color: colors.$white; // Use colors namespace for $white
   text-align: center;
   padding: 2rem;
 }
 
 .galleryDesc {
-  color: $tertiary-color;
+  color: colors.$tertiary-color; // Use colors namespace for $tertiary-color
   padding: 2rem;
 }
 
@@ -39,18 +39,22 @@
       content: "";
       width: 100%;
       height: 100%;
-      background-color: rgba($black, 0.9);
+      background-color: rgba(
+        colors.$black,
+        0.9
+      ); // Use colors namespace for $black
       position: absolute;
       bottom: 0;
     }
   }
 }
+
 .singleContent {
   width: 90%;
   position: absolute;
   bottom: 0;
   padding: 20px;
-  color: $white;
+  color: colors.$white; // Use colors namespace for $white
   opacity: 0;
 
   .singleLinks {
@@ -59,21 +63,23 @@
     justify-content: space-evenly;
 
     & a {
-      @include link($white);
+      @include globals.link(
+        colors.$white
+      ); // Use globals namespace for link mixin
     }
 
     & a:hover,
     button:hover {
       cursor: pointer;
       transform: scale(1.3);
-      color: $tertiary-color;
+      color: colors.$tertiary-color; // Use colors namespace for $tertiary-color
     }
   }
 
   .button {
     font-size: 1rem;
     font-family: "Josefin Sans", sans-serif;
-    color: $white;
+    color: colors.$white; // Use colors namespace for $white
     outline: none;
     border: none;
     background-color: transparent;
