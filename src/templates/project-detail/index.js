@@ -29,16 +29,16 @@ export const query = graphql`
 
 const ProjectDetail = ({ data }) => {
   const project = data.projectsJson
-  const image = getImage(data.file.childImageSharp)
+  // const image = getImage(data.file.childImageSharp)
 
   return (
     <Layout>
       <SEO title="Project" />
       <div className="projectDetailContainer">
         <hr />
-        <div className="detailImage">
+        {/* <div className="detailImage">
           <GatsbyImage image={image} alt={project.title} />
-        </div>
+        </div> */}
         <hr />
 
         <h1>{project.title}</h1>

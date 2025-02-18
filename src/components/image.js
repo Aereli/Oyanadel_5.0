@@ -25,13 +25,14 @@ const Image = () => {
       }
     }
   `)
-  const image = getImage(data.file.childImageSharp)
+  // const image = getImage(data.file.childImageSharp)
 
   if (!data?.placeholderImage?.childImageSharp?.fluid) {
     return <div>Picture not found</div>
   }
 
-  return <GatsbyImage image={image} />
+  // return <GatsbyImage image={image} />
+  return <></>
 }
 
 export default Image
